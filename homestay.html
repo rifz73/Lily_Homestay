@@ -1,1 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liliy Homestay | Affordable & Authentic Travel</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="homestay.css">
+</head>
+<body>
 
+    <div class="accessibility-panel" aria-label="Accessibility Settings">
+        <button class="access-btn" id="contrast-toggle" title="Toggle Contrast Mode">
+            <span class="btn-icon">🌓</span> Contrast
+        </button>
+        <button class="access-btn" id="size-toggle" title="Toggle Larger Font">
+            <span class="btn-icon">🔍</span> Text Size
+        </button>
+    </div>
+
+    <header class="site-header">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-flower">🌸</span> Lily Homestay
+            </a>
+            <button class="hamburger" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-menu-wrapper">
+                <ul class="nav-links" id="nav-menu">
+                    <li><a href="#home" class="nav-item">Home</a></li>
+                    <li><a href="#map" class="nav-item">Our Location</a></li>
+                    <li><a href="#blog" class="nav-item">Blog & Rates</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="reveal-section hero-section">
+            <div class="hero-intro">
+                <h1>Welcome to Lily Homestay</h1>
+                <p class="subtitle">"Affordable Journeys, Authentic Experiences"</p>
+            </div>
+            
+            <div class="slideshow-container">
+                <div class="slide fade">
+                    <div class="slide-placeholder" style="background-image: url('https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80')"></div>
+                </div>
+                <div class="slide fade">
+                    <div class="slide-placeholder" style="background-image: url('https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=1200&q=80')"></div>
+                </div>
+                <div class="slide fade">
+                    <div class="slide-placeholder" style="background-image: url('https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1200&q=80')"></div>
+                </div>
+                <div class="slide fade">
+                    <div class="slide-placeholder" style="background-image: url('https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80')"></div>
+                </div>
+                <div class="slide fade">
+                    <div class="slide-placeholder" style="background-image: url('https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=1200&q=80')"></div>
+                </div>
+                <div class="slide fade">
+                    <div class="slide-placeholder" style="background-image: url('https://images.unsplash.com/photo-1540518614846-7eded433c457?auto=format&fit=crop&w=1200&q=80')"></div>
+                </div>
+                
+                <button class="slide-nav prev" id="slide-prev" aria-label="Previous Slide">❮</button>
+                <button class="slide-nav next" id="slide-next" aria-label="Next Slide">❯</button>
+            </div>
+    
+            <div class="dot-container">
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            </div>
+    
+            <div class="price-showcase">
+                <span class="price-label">Nightly Rate</span>
+                <span class="price-value">RM 180</span>
+            </div>
+            <p class="scroll-helper-text">Scroll downwards or browse the navigation menu to view our local guides.</p>
+        </section>
+    
+        <div class="floral-divider">
+            <svg viewBox="0 0 100 20" preserveAspectRatio="none">
+                <path d="M0,10 Q25,18 50,10 T100,10" fill="none" stroke="currentColor" stroke-width="0.5" />
+                <circle cx="50" cy="10" r="1.5" fill="currentColor"/>
+            </svg>
+        </div>
+    
+        <section id="map" class="reveal-section map-section">
+            <div class="section-heading-block">
+                <h2>Our Location</h2>
+                <p>Nestled safely in beautiful, peaceful surroundings ideally positioned for your holiday travel plans.</p>
+            </div>
+            <div class="map-box">
+                <div class="map-interaction-overlay" id="map-overlay">
+                    <div class="map-card-info">
+                        <p class="map-title">📍 Lily Homestay</p>
+                        <p class="map-address">Penang, Malaysia</p>
+                    </div>
+                    <button class="btn-map" id="load-map-btn">Interact with Map</button>
+                </div>
+                <iframe id="google-iframe" data-src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7963.352393040084!2d100.4880069!3d5.5173242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304ad103b773e025%3A0x4ae429a9336ea62d!2sPutra%20Villas%20Townhouse%20-%20Bandar%20Putra%20Bertam!5e1!3m2!1sen!2smy!4v1781621587986!5m2!1sen!2smy" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+    
+        <div class="floral-divider">
+            <svg viewBox="0 0 100 20" preserveAspectRatio="none">
+                <path d="M0,10 Q25,18 50,10 T100,10" fill="none" stroke="currentColor" stroke-width="0.5" />
+                <circle cx="50" cy="10" r="1.5" fill="currentColor"/>
+            </svg>
+        </div>
+    
+        <section id="blog" class="reveal-section journal-section">
+            <div class="section-heading-block">
+                <h2>The Lily Journal & Booking</h2>
+            </div>
+            
+            <div class="blog-container">
+                <div class="blog-posts">
+                    <article class="blog-card" tabindex="0">
+                        <div class="blog-meta">TRAVEL GUIDE</div>
+                        <h3>🌸 Top 5 Local Eats Near the Homestay</h3>
+                        <p class="blog-preview">Discover the finest local street food stalls located just a brief 5-minute walk from our doorstep...</p>
+                        <p class="blog-full-content">From aromatic, wok-fired Char Kway Teow stalls to iced creamy sweet Cendol directly around the neighborhood block, eating authentic food here is incredibly rich and easy on your travel wallet. We love drawing personalized dining maps for our visitors—feel free to ask us for one upon checking in!</p>
+                        <span class="read-more-btn">Read Article ↓</span>
+                    </article>
+                    
+                    <article class="blog-card" tabindex="0">
+                        <div class="blog-meta">BUDGET INSIGHTS</div>
+                        <h3>🌿 Experiencing Heritage on a Budget</h3>
+                        <p class="blog-preview">Our expert budget strategies to maximize your travel adventure without missing local heritage...</p>
+                        <p class="blog-full-content">Avoid high package fees entirely! We offer complementary bicycle usage for all family visitors to tour scenic paddy-field trails and century-old historical structures quietly at your own comfort. Our family can also guide you towards the zero-entry architectural paths.</p>
+                        <span class="read-more-btn">Read Article ↓</span>
+                    </article>
+                </div>
+    
+                <div class="contact-info-panel">
+                    <div class="panel-header">
+                        <h3>Reserve Your Stay</h3>
+                        <p>To preserve our personal touch and minimize online processing margins, all custom dates are arranged directly through a quick human conversation.</p>
+                    </div>
+                    
+                    <div class="contact-group">
+                        <div class="contact-item">
+                            <span class="contact-label">Direct Contact Line</span>
+                            <strong class="contact-value">+60 16-971 5948</strong>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-label">Electronic Mail Desk</span>
+                            <strong class="contact-value">mislianipaiman@gmail.com</strong>
+                        </div>
+                    </div>
+                    
+                    <div class="panel-footer">
+                        <p class="guarantee-text">* Message us your scheduled travel window and guest size. We handle booking quotes in under two hours!</p>
+                        <a href="https://wa.me/60169715948" target="_blank" class="btn-booking">
+                            Chat via WhatsApp to Secure Dates
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="image-modal" class="modal" role="dialog" aria-hidden="true">
+        <span class="modal-close" id="modal-close" aria-label="Close Preview">&times;</span>
+        <div class="modal-content" id="modal-img-target"></div>
+    </div>
+
+    <script src="homestay.js"></script>
+</body>
+</html>
